@@ -7,4 +7,4 @@ Extracts information from exported HansaWorld .xlsx sheets into information spec
 
 The output will be the name of the file  + '- Extract.xls'
 
-Note to self: organize code a bit more, has some spaghetti code involved
+Note to self: delete unnecessary files...
