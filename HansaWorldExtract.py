@@ -8,6 +8,7 @@ import xlrd
 import datetime, xlrd
 import math
 import arial10
+import time
 
 ''' Reading Excel File'''
 
@@ -30,8 +31,12 @@ while True:
         print("\tPlease enter 'yes' to confirm awareness")
 
 
+
+
 workbook_to_extract = input('What workbook would you like to extract? ')
 print("")
+
+start_time = time.time()
 
 workbook = xlrd.open_workbook(workbook_to_extract + '.xlsx')
 sheet = workbook.sheet_by_index(0)
@@ -346,3 +351,4 @@ ws.col(7).width = (a - 6200) + int(a*0.1)
 wb.save(workbook_to_extract + ' - Extract.xls')
 
 print("\nExtract Completed.")
+print("My program took", time.time() - start_time, "to run")
