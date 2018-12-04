@@ -1,6 +1,27 @@
-
 '''  
 This python file extracts HansaWorld Excel sheets into organized information specific to AG Laser Technology workflow
+'''
+
+'''
+How I would improve this project if I were to do it again:
+- MORE CLASSES
+# Create classes for better organization, readability and encapsulation of variables
+# Try to hide variables to prevent any unwanted access to variables in global
+
+- Have better variable names
+# Keep them short & sweet, managing long variables = frustrating
+
+- Break this file into smaller files or modules
+# Maybe have my "writing the PO" part of the code in its own seperate file!
+
+- Create more loops to condense code
+# There are a few areas where I can use a loop to condense similar lines of code
+# Generally - A lot of copy/paste = there's probably a better way to write it
+
+What I do like
+- The comments are helpful
+- The algorithms I came up to solve this with were really cool
+
 '''
 
 import xlwt
@@ -29,9 +50,6 @@ while True:
         break
     else:
         print("\tPlease enter 'yes' to confirm awareness")
-
-
-
 
 workbook_to_extract = input('What workbook would you like to extract? ')
 print("")
